@@ -1,0 +1,25 @@
+<html>
+ <head>
+ <META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+ <META http-equiv="Content-Style-Type" content="text/css">
+     <title></title>
+
+  <script type="text/javascript" language="javascript">
+         function onButtonClick() {
+           target = document.getElementById("output");
+           target.innerText = document.forms.form1.textBox1.value;
+         }
+    \
+   </script>
+ </head>
+ <body>
+   <div class=Posting_Box>
+   <form name="form1" action="">
+     <input name="textBox1" type="text" value="" />
+     <input type="button" value="OK!" onclick="onButtonClick();" maxlength="140" />
+   </form>
+  </div>
+   <hr />
+   <div id="output"></div>
+ </body>
+ </html>

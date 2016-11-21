@@ -6,24 +6,44 @@
     <title>prototype</title>
 
     <script type="text/javascript" language="javascript">
-      // function onButtonClick() {
-         //target = document.getElementById("output");
-      //  target.innerText = document.forms.id_form1.id_textBox1.value;*/
-         //target.innerText = document.id_form1.id_textBox1.value;//これでもOK
+      function onButtonClick() {
+
+         var target = document.getElementById("output");
+         target.innerText = document.forms.id_form1.id_textBox1.value;
        }
 
  </script>
 
   </head>
   <body>
-  <form name="form1" id="id_form1" action="">
-    <input name="textBox1" id="id_textBox1" type="text" value="" />
-    <input type="button" value="Exec" onclick="onButtonClick();" />
-  </form>
-  <hr/>
-  <div class="output">
-    go
+  <div class="wrapper">
+    <div class="header">
+      <h1>つぅちったー</h1>
+    </div>
+    <div class="profile">
+        <img src="#" alt="hoge">
+        <h2 class="profile_name">hoge</h2>
+        <label class="profile_id">@hogehoge</label>
+      <ul>
+        <li class="profile_list">ポスト</li>
+        <li class="profile_list">支持者</li>
+        <li class="profile_list">被支持者</li>
+      </ul>
+    </div>
+    <div class="Posting_Box">
+    <p class="Posting_Box_P ">思ったことを投稿する</p>
+    <form name="form1" id="id_form1" action="">
+      <input name="textBox1" id="id_textBox1" type="text" value="" maxlength="140"/>
+      <button type="button" value="Exec" onclick="onButtonClick();" />
+      <button type="button" value="images"/>
+    </form>
+    </div>
 
+    <div id ="output">
+
+
+
+    </div>
   </div>
 
 
